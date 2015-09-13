@@ -1,0 +1,22 @@
+<div class="appt panel">
+  <h1>Appointment</h2>
+  <p>{{condition.name}} appointment with {{condition.doctor}}</p>
+  <h2>Conditions</h2>
+  <ul>
+    <li ng-repeat="condition in app.conditions">{{condition.name}} ({{condition.duration}})
+      <div>
+        <i>{{condition.details}}</i></div>
+    </li>
+  </ul>
+  <h2>Concerns</h2>
+  <ul>
+    <li ng-repeat="concern in conditionConcerns() | orderBy:'-rating'">({{concern.rating}}) {{concern.details}}</li>
+  </ul>
+  <h2>Expectations</h2>
+  <ul>
+    <li ng-repeat="expectation in app.expectations | orderBy:'-rating'">{{expectation.name}}</li>
+  </ul>
+
+  <a href="" class="button">Visit Timeline</a>
+
+</div>

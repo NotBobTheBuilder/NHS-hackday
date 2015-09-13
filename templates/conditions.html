@@ -1,0 +1,12 @@
+<div class="panel">
+  <h1>Conditions</h1>
+
+  <div ng-repeat="condition in app.conditions">
+    <h2>{{condition.name}}</h2>
+    <p>Duration: {{condition.duration}}</p>
+    <p>Clinician: {{condition.doctor}} ({{condition.docspecialism}} specialist)</p>
+  </div>
+
+  <a href="/#/condition" class="button">Add New</a>
+  <a href="/#/" class="button">Home</a>
+</div>

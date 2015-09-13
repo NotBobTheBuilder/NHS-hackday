@@ -1,0 +1,11 @@
+<div class="panel">
+  <h1>Add Expectation</h1>
+  <label>Name of expectation</label>
+  <input type="text" ng-model="expectation.name">
+
+  <label>Details</label>
+  <textarea ng-model="expectation.details"></textarea>
+
+  <button type="button" class="button" ng-click="saveAndAnother(expectation)">Save &amp; Add Another</button>
+  <button type="button" class="button" ng-click="saveAndExpectations(expectation)">Save &amp; See Expectations</button>
+</div>

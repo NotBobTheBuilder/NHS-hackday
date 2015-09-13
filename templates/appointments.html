@@ -1,0 +1,10 @@
+<div class="panel">
+  <h2>Condition Choice</h2>
+  Select the Condition this appointment is for:
+
+  <ul>
+    <li ng-repeat="condition in app.conditions"><a ng-href="/#/appointments/{{condition.name}}">{{condition.name}}</a></li>
+  </ul>
+
+  <button type="button" class="button" ng-click="save(app)">Save</button>
+</div>

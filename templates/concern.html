@@ -1,0 +1,26 @@
+<div class="panel">
+  <h1>Add Concern</h1>
+  <label>Details of Concern</label>
+  <textarea ng-model="concern.details"></textarea>
+
+  <label>Any specific symptoms?</label>
+  <input type="text" ng-model="concern.symptoms">
+  <label>Any related conditions?</label>
+  <label>
+    <input type="radio" name="condition" ng-model="condern.condition" value="none"> None
+  </label>
+  <label ng-repeat="c in app.conditions">
+
+    <input type="radio" name="condition" ng-model="concern.condition" value="{{c.name}}">{{c.name}}
+  </label>
+  <label>How concerned are you, where 5 is most and 1 is least?</label>
+  <label class="il">1 <input type="radio" ng-model="concern.rating" value="1"></label>
+  <label class="il">2 <input type="radio" ng-model="concern.rating" value="2"></label>
+  <label class="il">3 <input type="radio" ng-model="concern.rating" value="3"></label>
+  <label class="il">4 <input type="radio" ng-model="concern.rating" value="4"></label>
+  <label class="il">5 <input type="radio" ng-model="concern.rating" value="5"></label>
+
+  <button type="button" class="button" ng-click="saveAndAnother(concern)">Save &amp; Add Another</button>
+  <button type="button" class="button" ng-click="saveAndExpectation(concern)">Save &amp; Add Expectation</button>
+  <button type="button" class="button" ng-click="saveAndConcern(concern)">Save &amp; See Concerns</button>
+</div>

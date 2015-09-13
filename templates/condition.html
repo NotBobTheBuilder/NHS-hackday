@@ -1,0 +1,17 @@
+<div class="panel">
+  <h1>Add Condition</h1>
+  <label>Name of condition</label>
+  <input type="text" ng-model="condition.name">
+
+  <label>Duration of condition</label>
+  <input type="text" ng-model="condition.duration">
+  <label>Doctor Name</label>
+  <input type="text" ng-model="condition.doctor">
+  <label>Doctor Specialism</label>
+  <input type="text" ng-model="condition.docspecialism">
+  <label>Details</label>
+  <textarea ng-model="condition.details"></textarea>
+
+  <button type="button" class="button" ng-click="saveAndAnother(condition)">Save &amp; Add Another</button>
+  <button type="button" class="button" ng-click="saveAndConditions(condition)">Save &amp; See Conditions</button>
+</div>
