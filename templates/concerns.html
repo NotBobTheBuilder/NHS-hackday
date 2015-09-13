@@ -2,7 +2,7 @@
   <h1>Concerns</h1>
 
   <div ng-repeat="concern in app.concerns.patient">
-    <h3>{{concern.details}}</h3>
+    <h3><i class="fa fa-user-md" ng-show="concern.owner=='D'"></i><i class="fa fa-user" ng-show="concern.owner=='P'"></i> {{concern.details}}</h3>
     <p>Symptoms: {{concern.symptoms}}</p>
     <p>Related Conditions: {{concern.condition}}</p>
   </div>

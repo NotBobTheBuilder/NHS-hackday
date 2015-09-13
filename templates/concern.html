@@ -1,5 +1,10 @@
 <div class="panel">
   <h1>Add Concern</h1>
+  <label>Patient or Doctor's concern</label>
+  <select ng-model="concern.owner">
+    <option value="P">Patient</option>
+    <option value="D">Doctor</option>
+  </select>
   <label>Details of Concern</label>
   <textarea ng-model="concern.details"></textarea>
 
